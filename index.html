@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Talks list</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://lea.verou.me/wp-content/themes/elegant/style.css" />
+<link rel="stylesheet" href="https://get.mavo.io/stable/mavo.min.css">
+<script src="https://get.mavo.io/stable/mavo.es5.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main mv-app class="talks" mv-plugins="gsheets" mv-storage="https://docs.google.com/spreadsheets/d/1CNZiLjLs8jHHunUCSkExaXiF6PhM8R6ncWWWcymrJ9g/edit?usp=sharing" mv-storage-sheet="Sheet1" >
+	<h1>[count(visit)] visitas, [count(exitosa)] exitosas </h1>
+	<article mv-multiple property="event" mv-order="desc">	
+		<h1 property="visit"></h1>
+		<h2>
+			<a property="url" target="_blank">
+			<span property="nombre y apellido"></span>
+			</a>
+		</h2>
+		<p class="date"><span property="fecha"></span></p>
+		<address class="">
+			<span property="telefono"></span>|
+      			<span property="direccion"></span>|
+			<span property="correo-e"></span>		
+		</address>
+	<p property="coordenadas"></p>
+    	<p property="comentario"></p>
+	<p property="exitosa"></p>
+	<p property="hora"></p>
+	</article>
+</main>
+</body>
+</html>
